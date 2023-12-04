@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Homework</title>
+</head>
+<body>
+    <!-- 標題 -->
+    <h3>Student Data</h3>
+     
+    <!-- 水平分割線 -->
+    <hr>
+    
+    <!-- 定義form表單 -->
+    <!-- action = 表單輸入並送出之後，要切換過去之路由，而表單內容基本上屬於比較私密之資料，因此會使用POST request -->
+    <form action='/student_data' method = 'POST'>
+        <!-- 輸入欄定義，懂都懂 -->
+        Name <input type="text" name="string1"/>
+        <br>
+        ID <input type="text" name="string2"/>
+        <!-- 定義一個按鈕，按下會送出表單內容，懂都懂 -->
+        <br>
+        <button>submit</button>
+    </form>
+</body>
+</html>
