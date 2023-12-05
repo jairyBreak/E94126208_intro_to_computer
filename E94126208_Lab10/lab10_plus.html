@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Food Judge </title>
+    <!-- <document/title> is wrong  -->
+</head>
+<body>
+    <!-- 標題 -->
+    <h3>food Score </h3>
+     
+    <!-- 水平分割線 -->
+    <hr>
+    
+    <!-- 定義form表單 -->
+    <!-- action = 表單輸入並送出之後，要切換過去之路由，而表單內容基本上屬於比較私密之資料，因此會使用POST request -->  
+    <form action='/set' method = 'POST'>
+        <!-- 輸入欄定義，懂都懂 -->
+        Store Name <input type="text" name="string1"/>
+        <br>
+        <br>
+        Score <input type="text" name="string2"/>
+        <br>
+        <br>
+        <!-- 定義一個按鈕，按下會送出表單內容，懂都懂 -->
+        <button>submit</button>
+        <br>
+        <br>
+        <!--output dictionary -->
+        <p>Current Data: {{ current_data_str }}</p>
+        <!-- Current Data : <current_data_str/>  -->
+
+        
+    </form>
+    
+</body>
+</html>
